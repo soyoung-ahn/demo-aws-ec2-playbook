@@ -1,6 +1,6 @@
 ---
 key_name: bespin-opin-ssh
-region: ap-northeast-2a
+region: ap-northeast-2
 image: ami-00ab7932c8e82a7b5
 sec_group: 	sg-04252ea1a32bca958
 vpc_subnet_id: subnet-0a9418b528efc497e
