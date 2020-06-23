@@ -1,0 +1,14 @@
+---
+# tasks file for aws
+- name: Create EC2 Instance
+  ec2:
+    key_name: "{{ key_name }}"
+    image: "{{ image }}"
+    instance_type: t2.micro
+    region: "{{ region }}"
+    vpc_subnet_id: "{{vpc_subnet_id}}"
+    group_id: "{{sec_group}}"
+    instance_tags:
+      Name: DevOS Test EC2 Instance
+    wait: true
+    count: 1

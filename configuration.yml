@@ -1,0 +1,9 @@
+---
+
+- hosts: 10.0.1.184
+  gather_facts: False
+  become: True
+  vars_files:
+    - group_vars/configuration.yml
+  roles:
+    - role : configuration

@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  vars_files:
+    - group_vars/ec2.yml
+  tasks:
+    - name: Get instances facts
+      ec2_instance_facts:
+        region: "{{ region }}"
+      register: result
+
+    - name: Instances ID
+      debug:
+        msg: "ID: {{ item.instance_id }} - State: {{ item.state.name }} - Public DNS: {{ item.public_dns_name }}"
+      loop: "{{ result.instances }}"

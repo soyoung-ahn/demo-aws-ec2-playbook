@@ -1,0 +1,19 @@
+---
+
+- name: Host Info Facts
+  command: hostname
+  register: host_info
+
+- name: Print Host Name
+  debug:
+    msg: "hostName is {{host_info.stdout}}"
+
+- name: Install Nginx
+  yum:
+    name: nginx
+    state: present
+
+- name: Start Nginx
+  service:
+    name: nginx
+    state: started
