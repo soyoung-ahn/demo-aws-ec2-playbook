@@ -1,6 +1,6 @@
 ---
 
-- hosts: 10.240.10.65
+- hosts: instance
   gather_facts: False
   become: True
   vars_files:
