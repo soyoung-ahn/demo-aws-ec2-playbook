@@ -1,6 +1,5 @@
 ---
-
-- hosts: 3.34.40.129
+- hosts: instance
   gather_facts: False
   #become: True
   vars_files:
