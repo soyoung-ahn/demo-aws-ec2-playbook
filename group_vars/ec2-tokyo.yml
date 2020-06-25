@@ -1,0 +1,6 @@
+---
+key_name: bastionKeyPair
+region: ap-northeast-1
+image: ami-00ab7932c8e82a7b5
+sec_group: 	sg-04e648ccbeda59267
+vpc_subnet_id: subnet-08eee201952459531

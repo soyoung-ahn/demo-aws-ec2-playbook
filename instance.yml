@@ -4,6 +4,6 @@
   connection: local
   gather_facts: False
   vars_files:
-    - group_vars/ec2.yml
+    - group_vars/ec2-tokyo.yml
   roles:
     - role: instance
