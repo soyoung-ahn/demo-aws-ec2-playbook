@@ -1,7 +1,7 @@
 ---
 - hosts: instance
   gather_facts: False
-  #become: True
+  become: True
   vars_files:
     - group_vars/configuration.yml
   roles:
