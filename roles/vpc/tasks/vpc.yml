@@ -37,7 +37,7 @@
 
 - name: "set fact: Security Groups"
   set_fact:
-    security_groups: "{{ security_groups | default({}) | combine({ item.group.name: item.name }) }}"
+    security_groups: "{{ security_groups | default({}) | combine({ item.name: item.name }) }}"
   loop: "{{ create_security_groups.results }}"
 
 - name: create EC2 key
