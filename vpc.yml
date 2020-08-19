@@ -7,4 +7,3 @@
     - group_vars/vpc-tokyo.yml
   roles:
     - vpc
-    - instance
