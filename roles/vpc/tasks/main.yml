@@ -1,0 +1,4 @@
+---
+- include: vpc.yml
+- include: gateways.yml
+#- include: facts.yml

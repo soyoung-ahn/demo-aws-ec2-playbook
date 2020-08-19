@@ -2,12 +2,12 @@
 # tasks file for aws
 - name: Create EC2 Instance
   ec2:
-    key_name: "{{ key_name }}"
+    key_name: "{{ vpc_key }}"
     image: "{{ image }}"
     instance_type: t2.micro
-    region: "{{ region }}"
-    vpc_subnet_id: "{{vpc_subnet_id}}"
-    group_id: "{{sec_group}}"
+    region: "{{ aws_region }}"
+    vpc_subnet_id: "{{vpc_subnet_ids[0].id}}"
+    group_id: "{{ security_groups }}"
     assign_public_ip: yes
     instance_tags:
       Name: DevOS Test EC2 Instance
