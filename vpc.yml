@@ -4,7 +4,7 @@
   connection: local
   gather_facts: False
   vars_files:
-    - group_vars/vpc.yml
+    - group_vars/vpc-tokyo.yml
   roles:
     - vpc
     - instance
