@@ -6,8 +6,8 @@
     image: "{{ image }}"
     instance_type: t2.micro
     region: "{{ aws_region }}"
-    vpc_subnet_id: "{{vpc_subnet_ids[0].id}}"
-    group_id: "{{ security_groups[0].group_id }}"
+    vpc_subnet_id: "{{ vpc_subnet_ids['private-a'] }}"
+    group_id: "{{ security_groups['allow-public-ssh'].group_id }}"
     assign_public_ip: yes
     instance_tags:
       Name: DevOS Test EC2 Instance
