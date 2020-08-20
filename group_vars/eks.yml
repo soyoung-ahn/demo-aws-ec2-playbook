@@ -1,5 +1,5 @@
 ---
 #eks variables are here
-iam_role_arn : dcos-eks-dev-cluster
+iam_role_arn : arn:aws:iam::923247590277:role/dcos-eks-dev-cluster
 esk_region : ap-northeast-1
 eks_subnet : subnet-026cbdf685ee58384
