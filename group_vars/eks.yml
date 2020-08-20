@@ -2,6 +2,5 @@
 #eks variables are here
 iam_role_arn : arn:aws:iam::923247590277:role/dcos-eks-dev-cluster
 esk_region : ap-northeast-1
-eks_subnets :
-  az_a: subnet-026cbdf685ee58384
-  az_d: subnet-072198026ade90e7a
+eks_subnet_az_a: subnet-026cbdf685ee58384
+eks_subnet_az_d: subnet-072198026ade90e7a

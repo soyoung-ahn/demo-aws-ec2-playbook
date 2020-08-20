@@ -5,8 +5,8 @@
     region : "{{ esk_region }}"
     version: 1.17
     subnets:
-      - "{{ eks_subnets.az-a }}"
-      - "{{ eks_subnets.az-d }}"
+      - "{{ eks_subnet_az_a }}"
+      - "{{ eks_subnet_az_d }}"
     security_groups:
       - SG-DevOps-Test-Common-SSH
   register: gather_facts
