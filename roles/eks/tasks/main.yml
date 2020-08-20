@@ -3,7 +3,7 @@
     name: test_cluster
     role_arn : "{{ iam_role_arn }}"
     region : "{{ esk_region }}"
-    version: v1.17
+    version: 1.17
     subnets:
       - "{{ eks_subnet }}"
     security_groups:
