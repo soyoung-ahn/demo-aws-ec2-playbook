@@ -7,5 +7,5 @@
     subnets:
       - "{{ eks_subnet }}"
     security_groups:
-      - SG-DevOps-Dev-AWX
+      - SG-DevOps-Test-Common-SSH
   register: gather_facts
