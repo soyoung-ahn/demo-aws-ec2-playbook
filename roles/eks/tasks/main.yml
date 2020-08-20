@@ -1,0 +1,11 @@
+- name: Create an EKS cluster
+  aws_eks_cluster:
+    name: test_cluster
+    role_arn : "{{ iam_role_arn }}"
+    region : "{{ esk_region }}"
+    version: v1.17
+    subnets:
+      - "{{ eks_subnet }}"
+    security_groups:
+      - SG-DevOps-Dev-AWX
+  register: gather_facts

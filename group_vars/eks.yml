@@ -1,0 +1,5 @@
+---
+#eks variables are here
+iam_role_arn : eks-service-role
+esk_region : ap-northeast-2
+eks_subnet : subnet-04874a1bbd493d1a3
