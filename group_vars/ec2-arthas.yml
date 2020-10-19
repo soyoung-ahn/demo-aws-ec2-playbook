@@ -1,0 +1,7 @@
+---
+key_name: daveTokyoKeypair
+region: ap-northeast-1
+image: ami-0ce107ae7af2e92b5
+sec_group: 	sg-0ef64a541fac662f4
+vpc_subnet_id: subnet-026cbdf685ee58384
+private_ip : 10.242.10.110
