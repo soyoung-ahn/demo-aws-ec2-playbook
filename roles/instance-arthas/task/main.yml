@@ -1,0 +1,15 @@
+---
+- name: Create EC2 Instance
+  ec2:
+    key_name: "{{ key_name }}"
+    image: "{{ image }}"
+    instance_type: t2.micro
+    region: "{{ region }}"
+    vpc_subnet_id: "{{vpc_subnet_id}}"
+    group_id: "{{sec_group}}"
+    private_ip : "{{private_ip}}"
+    assign_public_ip: yes
+    instance_tags:
+      Name: DevOS Test EC2 Instance For Arthas
+    wait: true
+    count: 1
