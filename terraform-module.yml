@@ -4,7 +4,7 @@
   gather_facts: False
   tasks:
     - name: Ansible Use Terraform Module Deploy EC2
-      community.general.terraform:
+      terraform:
         project_path: "terraform/"
         force_init: true
         state: present
