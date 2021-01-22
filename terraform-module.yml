@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Ansible Use Terraform Module Deploy EC2
+      community.general.terraform:
+        project_path: "terraform/"
+        force_init: true
+        state: present
+      register: created_ec2_to_terraform
+    - name: Debug
+      debug:
+        msg: "{{ created_ec2_to_terraform }}"
