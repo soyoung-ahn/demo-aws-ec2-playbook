@@ -11,7 +11,7 @@ provider "aws" {
 resource "aws_instance" "dave-test" {
     ami = "ami-01748a72bed07727c"
     instance_type = "t2.micro"
-    subnet_id = "subnet-0278d7d9fcdcfccf2"
+    subnet_id = "subnet-0a8d68ae243c74d17"
     tags = {
         Name = "daveTest Instance"
     }
