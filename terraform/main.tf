@@ -1,6 +1,8 @@
 terraform {
     backend "http" {
         address = "http://192.168.1.11:9090/state"
+        lock_address = "http://192.168.1.11:9090/state"
+        unlock_address = "http://192.168.1.11:9090/state"
     }
 }
 
