@@ -1,6 +1,6 @@
 terraform {
-    backend "local" {
-        path = "/tmp/test/dave/terraform.tfstate"
+    backend "http" {
+        address = "http://192.168.1.11:9090/state"
     }
 }
 
