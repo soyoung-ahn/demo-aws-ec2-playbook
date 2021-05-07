@@ -1,0 +1,17 @@
+---
+# tasks file for aws
+- name: Create Azure VM Instance
+  azure_rm_virtualmachine:
+    resource_group: "{{resource_group}}"
+    name: daveFreeVM
+    vm_size: "{{vm_size}}"
+    admin_username: azureuser
+    ssh_password_enabled: false
+    ssh_public_keys:
+      - path: /home/azureuser/.ssh/authorized_keys
+        key_data: "{{ssh_keys}}"
+    image:
+      offer: CentOS
+      publisher: OpenLogic
+      sku: '7.1'
+      version: latest
