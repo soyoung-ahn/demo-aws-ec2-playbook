@@ -1,4 +1,4 @@
 ---
-resource_group: daehuynResourceGroup
+resource_group: daehyunRG
 vm_size : Standard_B1ls
 instance_name : daehyunTestVM
