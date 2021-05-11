@@ -1,0 +1,7 @@
+---
+instance_name: dave-test-instance
+machine_type: e2-micro
+region: asia-northeast3
+zone: asia-northeast3-a
+project: devops-developgroup-project
+auth_kind: serviceaccount

@@ -1,0 +1,9 @@
+---
+#provisioning
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  vars_files:
+    - group_vars/gcp-instance.yml
+  roles:
+    - role: gcp
