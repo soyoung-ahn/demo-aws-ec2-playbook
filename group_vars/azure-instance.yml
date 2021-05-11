@@ -1,3 +1,4 @@
 ---
-resource_group: daveFreeResourceGroup
+resource_group: daehuynResourceGroup
 vm_size : Standard_B1ls
+instance_name : daehyunTestVM
