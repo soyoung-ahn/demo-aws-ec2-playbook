@@ -1,8 +1,9 @@
 ---
 - name: create a disk
   gcp_compute_disk:
-    name: 'dave-disk-instance'
-    size_gb: 10
+    name: "{{ prefix_name }}-disk-instance"
+    size_gb: "{{ disk_size }}"
+    source_image : "{{ source_image }}"
     zone: "{{ zone }}"
     project: "{{ project }}"
     auth_kind: "{{ auth_kind }}"
@@ -10,15 +11,15 @@
 
 - name: create a network
   gcp_compute_network:
-    name: 'dave-network-instance'
-    auto_create_subnetworks: 'true'
+    name: "{{ prefix_name }}-network-instance"
+    auto_create_subnetworks: "true"
     project: "{{ project }}"
     auth_kind: "{{ auth_kind }}"
   register: network
 
 - name: create a address
   gcp_compute_address:
-    name: 'dave-address-instance'
+    name: "{{ prefix_name }}-address-instance"
     region: "{{ region }}"
     project: "{{ project }}"
     auth_kind: "{{ auth_kind }}"
@@ -26,7 +27,7 @@
 
 - name: create a instance
   gcp_compute_instance:
-    name: "{{instance_name}}"
+    name: "{{ instance_name }}"
     machine_type: "{{machine_type}}"
     disks:
       - auto_delete: true
