@@ -13,5 +13,5 @@
     image:
       offer: CentOS
       publisher: OpenLogic
-      sku: '7.1'
+      sku: '7.5'
       version: latest
