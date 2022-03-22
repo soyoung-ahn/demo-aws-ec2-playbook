@@ -1,5 +1,4 @@
 ---
-# tasks file for aws
 - name: Create Azure VM Instance
   azure_rm_virtualmachine:
     resource_group: "{{resource_group}}"
@@ -11,7 +10,11 @@
       - path: /home/azureuser/.ssh/authorized_keys
         key_data: "{{ssh_keys}}"
     image:
-      offer: CentOS
-      publisher: OpenLogic
-      sku: '7.5'
+      offer: UbuntuServer
+      publisher: Canonical
+      sku: '16.04-LTS'
       version: latest
+    location: "{{location}}"
+    virtual_network_name: "{{virtual_network_name}}"
+    tags: 
+      SWQA : "DevOps"
