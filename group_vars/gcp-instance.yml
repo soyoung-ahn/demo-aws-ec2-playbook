@@ -1,11 +1,11 @@
 ---
-instance_name: devos-demo-instance
-machine_type: e2-micro
-region: asia-northeast3
-zone: asia-northeast3-a
-project: devops-developgroup-project
-auth_kind: serviceaccount
+instance_name: "sy-gcp-devos-provisioning"
+machine_type: "e2-micro"
+region: "asia-northeast3"
+zone: "asia-northeast3-a"
+project: "opsnow-qa-automation"
+auth_kind: "serviceaccount"
 #ComputeEngine > Storage > images > search > selfLink
-source_image: projects/confidential-vm-images/global/images/ubuntu-1804-bionic-v20201014
-prefix_name: devos
+source_image: projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20211115
+prefix_name: "devosqa"
 disk_size: 10
