@@ -1,4 +1,4 @@
 ---
-resource_group: daehyunRG
+resource_group: DevOps-ResourceGroup
 vm_size : Standard_B1ls
-instance_name : daehyunTestVM
+instance_name : devos_azure_test_sy
